@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llm-course-hugging-face"
+version = "0.1.0"
+description = "Blank Poetry project for the LLM course on Hugging Face."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "llm_course_hugging_face", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformers = "^5.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"

@@ -2,7 +2,7 @@
 
 https://huggingface.co/learn/llm-course
 
-## Hugging Face - SCU
+## Hugging Face - Santa Clara University
 
 https://huggingface.co/nlpscu
 
