@@ -13,3 +13,6 @@ kernel:
 	poetry run python -m ipykernel install --user \
 	  --name llm-course-hugging-face \
 	  --display-name "HuggingFace LLM Course (ROCm)"
+
+test:
+	poetry run pytest -v
