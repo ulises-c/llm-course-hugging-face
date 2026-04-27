@@ -218,3 +218,7 @@ tokenizer_config.json
 trainer_state.json
 tokenizer.json
 config.json
+wandb-metadata.json
+latest-run
+run-*.wandb
+requirements.txt
