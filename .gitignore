@@ -209,7 +209,6 @@ __marimo__/
 
 # Training outputs
 model.safetensors
-
 scheduler.pt
 rng_state.pth
 optimizer.pt
@@ -222,3 +221,6 @@ wandb-metadata.json
 latest-run
 run-*.wandb
 requirements.txt
+
+# Other HF practice files to ignore
+src/llm_course_hugging_face/chapter4/dummy-model-local/
