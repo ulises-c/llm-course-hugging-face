@@ -226,3 +226,8 @@ requirements.txt
 src/llm_course_hugging_face/chapter4/dummy-model-local/
 SQuAD_*
 drugs*
+*.jsonl
+*.arrow
+state.json
+dataset_info.json
+dataset_dict.json
