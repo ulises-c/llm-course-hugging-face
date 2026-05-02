@@ -224,3 +224,5 @@ requirements.txt
 
 # Other HF practice files to ignore
 src/llm_course_hugging_face/chapter4/dummy-model-local/
+SQuAD_*
+drugs*
