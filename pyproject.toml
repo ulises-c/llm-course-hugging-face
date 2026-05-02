@@ -24,6 +24,7 @@ scikit-learn = "^1.8.0"
 wandb = "^0.26.1"
 # torch = { version = "2.9.1+rocm6.3", source = "pytorch-rocm" }
 ipywidgets = "^8.1.8"
+faiss-cpu = "^1.13.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"
