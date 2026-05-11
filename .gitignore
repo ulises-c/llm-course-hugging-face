@@ -232,3 +232,7 @@ state.json
 dataset_info.json
 dataset_dict.json
 wikitext-2.txt
+src/llm_course_hugging_face/chapter*/*/
+
+# VS Code
+settings.json
