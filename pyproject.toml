@@ -32,7 +32,7 @@ sacrebleu = "^2.6.0"
 seqeval = "^1.2.2"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.0"
+pytest = ">=8,<10"
 
 
 [build-system]
