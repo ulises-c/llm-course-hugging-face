@@ -1,12 +1,12 @@
 .PHONY: install kernel test
 
 # torch is excluded from pyproject.toml because Poetry cannot resolve the
-# +rocm6.3 local-version identifier alongside PyPI wheels.
+# +rocm7.2 local-version identifier alongside PyPI wheels.
 install:
 # 	poetry install --no-cache
 	poetry run pip install --force-reinstall --no-deps \
-	  --index-url https://download.pytorch.org/whl/rocm6.3 \
-	  "torch==2.9.1+rocm6.3" \
+	  --index-url https://download.pytorch.org/whl/rocm7.2 \
+	  "torch==2.11.0+rocm7.2" \
 	  "torchvision" \
 	  "torchaudio"
 	$(MAKE) kernel

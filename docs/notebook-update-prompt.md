@@ -31,6 +31,7 @@ Update Chapter N notebooks (`src/llm_course_hugging_face/chapterN/`) to run loca
 | ROUGE scores (evaluate 0.4+)    | `result[key].mid.fmeasure * 100`                                              | `result[key] * 100` (plain float)                                                                    |
 | `distutils.dir_util.copy_tree`  | —                                                                             | `shutil.copytree(..., dirs_exist_ok=True)` (distutils removed in Python 3.12)                        |
 | Extra pip installs mid-notebook | `!pip install seqeval`, `!pip install sacrebleu`, etc.                        | Comment out                                                                                          |
+| `load_dataset("conll2003")`     | `load_dataset("conll2003")`                                                   | `load_dataset("conll2003", revision="refs/convert/parquet")` — newer `datasets` drops script support ([source](https://discuss.huggingface.co/t/chapter-7-questions/11746/127)) |
 | NLTK downloads                  | `nltk.download("punkt")`                                                      | Also add `nltk.download("punkt_tab")` (required in NLTK 3.9+)                                        |
 
 #### Intentionally broken cells — do NOT fix
@@ -52,6 +53,7 @@ Keep `push_to_hub=True` in `TrainingArguments` and keep `trainer.push_to_hub()` 
 1. Are there any notebooks in this chapter that are already updated? (Check git log or compare cell content against the Colab originals.)
 2. Does this chapter have a debugging section with intentionally broken cells? If yes, identify which cells should stay broken before editing.
 3. Are there any chapter-specific pip installs beyond the standard set (e.g. `rouge_score`, `sacrebleu`, `seqeval`, `nltk`)? These should all be commented out.
+4. Search the HuggingFace forum thread for this chapter and check for known issues. The threads follow the pattern `https://discuss.huggingface.co/t/chapter-N-questions/` — scan for posts reporting errors and note any workarounds before editing.
 
 ### Verification after editing
 
